@@ -445,7 +445,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49ff86bc79dc74bb6aa57c7d8725e80b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ButtonScript
-  sceneName: MainGame
+  sceneName: GameLevel
 --- !u!114 &728239847
 MonoBehaviour:
   m_ObjectHideFlags: 0
