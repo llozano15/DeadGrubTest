@@ -20,6 +20,8 @@ public class PickupFood : MonoBehaviour
             {
                 FoodPickup();
             }
+
+            Debug.Log("Player is in pickup zone. Press 'F' to pick up food.");
         }
     }
 

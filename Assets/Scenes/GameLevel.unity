@@ -318,8 +318,10 @@ GameObject:
   - component: {fileID: 90558556}
   - component: {fileID: 90558555}
   - component: {fileID: 90558554}
+  - component: {fileID: 90558559}
+  - component: {fileID: 90558558}
   m_Layer: 0
-  m_Name: Bag (1)
+  m_Name: Bag_Two
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -340,7 +342,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -412,12 +414,52 @@ Transform:
   m_GameObject: {fileID: 90558553}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.6325784, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.36520004, y: 0.11828998, z: -0.59303}
+  m_LocalScale: {x: 0.4526582, y: 0.4526582, z: 0.4526582}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1380106962}
+  m_Father: {fileID: 1800173912}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &90558558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 90558553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bd4be106a35b40a7b2dd6b368ec1709, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Food
+  destinationHouseTag: 
+--- !u!54 &90558559
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 90558553}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &198882143
 GameObject:
   m_ObjectHideFlags: 0
@@ -430,6 +472,7 @@ GameObject:
   - component: {fileID: 198882146}
   - component: {fileID: 198882145}
   - component: {fileID: 198882144}
+  - component: {fileID: 198882148}
   m_Layer: 0
   m_Name: HouseTwelve
   m_TagString: House_Twelve
@@ -452,7 +495,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -530,6 +573,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1565521015}
   m_LocalEulerAnglesHint: {x: 0, y: 210, z: 0}
+--- !u!114 &198882148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 198882143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a861ad2283164b8baa82b338b98561e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HouseDelivery
 --- !u!1 &266155234
 GameObject:
   m_ObjectHideFlags: 0
@@ -974,6 +1029,7 @@ GameObject:
   - component: {fileID: 325581978}
   - component: {fileID: 325581977}
   - component: {fileID: 325581976}
+  - component: {fileID: 325581980}
   m_Layer: 0
   m_Name: HouseNine
   m_TagString: House_Nine
@@ -996,7 +1052,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -1074,6 +1130,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1565521015}
   m_LocalEulerAnglesHint: {x: 0, y: 300, z: 0}
+--- !u!114 &325581980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 325581975}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a861ad2283164b8baa82b338b98561e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HouseDelivery
 --- !u!1 &335515911
 GameObject:
   m_ObjectHideFlags: 0
@@ -1200,6 +1268,7 @@ GameObject:
   - component: {fileID: 342059350}
   - component: {fileID: 342059349}
   - component: {fileID: 342059348}
+  - component: {fileID: 342059352}
   m_Layer: 0
   m_Name: HouseFour
   m_TagString: House_Four
@@ -1222,7 +1291,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -1300,6 +1369,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1565521015}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &342059352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 342059347}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a861ad2283164b8baa82b338b98561e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HouseDelivery
 --- !u!1 &488068235
 GameObject:
   m_ObjectHideFlags: 0
@@ -1312,6 +1393,7 @@ GameObject:
   - component: {fileID: 488068238}
   - component: {fileID: 488068237}
   - component: {fileID: 488068236}
+  - component: {fileID: 488068240}
   m_Layer: 0
   m_Name: HouseFive
   m_TagString: House_Five
@@ -1334,7 +1416,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -1412,6 +1494,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1565521015}
   m_LocalEulerAnglesHint: {x: 0, y: 60, z: 0}
+--- !u!114 &488068240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 488068235}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a861ad2283164b8baa82b338b98561e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HouseDelivery
 --- !u!1 &623599057
 GameObject:
   m_ObjectHideFlags: 0
@@ -1424,6 +1518,7 @@ GameObject:
   - component: {fileID: 623599060}
   - component: {fileID: 623599059}
   - component: {fileID: 623599058}
+  - component: {fileID: 623599062}
   m_Layer: 0
   m_Name: HouseTwo
   m_TagString: House_Two
@@ -1446,7 +1541,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -1524,6 +1619,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1565521015}
   m_LocalEulerAnglesHint: {x: 0, y: 150, z: 0}
+--- !u!114 &623599062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 623599057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a861ad2283164b8baa82b338b98561e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HouseDelivery
 --- !u!1 &670393847
 GameObject:
   m_ObjectHideFlags: 0
@@ -1536,6 +1643,7 @@ GameObject:
   - component: {fileID: 670393850}
   - component: {fileID: 670393849}
   - component: {fileID: 670393848}
+  - component: {fileID: 670393852}
   m_Layer: 0
   m_Name: HouseOne
   m_TagString: House_One
@@ -1558,7 +1666,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -1636,6 +1744,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1565521015}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &670393852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 670393847}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a861ad2283164b8baa82b338b98561e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HouseDelivery
 --- !u!1 &695551125
 GameObject:
   m_ObjectHideFlags: 0
@@ -1785,6 +1905,7 @@ GameObject:
   - component: {fileID: 705527861}
   - component: {fileID: 705527860}
   - component: {fileID: 705527859}
+  - component: {fileID: 705527863}
   m_Layer: 0
   m_Name: HouseTen
   m_TagString: House_Ten
@@ -1807,7 +1928,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -1885,6 +2006,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1565521015}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &705527863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 705527858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a861ad2283164b8baa82b338b98561e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HouseDelivery
 --- !u!1 &722386243
 GameObject:
   m_ObjectHideFlags: 0
@@ -2070,6 +2203,7 @@ GameObject:
   - component: {fileID: 879969697}
   - component: {fileID: 879969696}
   - component: {fileID: 879969695}
+  - component: {fileID: 879969699}
   m_Layer: 0
   m_Name: HouseEleven
   m_TagString: House_Eleven
@@ -2092,7 +2226,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -2170,6 +2304,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1565521015}
   m_LocalEulerAnglesHint: {x: 0, y: 240, z: 0}
+--- !u!114 &879969699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 879969694}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a861ad2283164b8baa82b338b98561e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HouseDelivery
 --- !u!1 &882162019
 GameObject:
   m_ObjectHideFlags: 0
@@ -2367,6 +2513,7 @@ GameObject:
   - component: {fileID: 922936930}
   - component: {fileID: 922936929}
   - component: {fileID: 922936928}
+  - component: {fileID: 922936932}
   m_Layer: 0
   m_Name: HouseSix
   m_TagString: House_Six
@@ -2389,7 +2536,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -2467,6 +2614,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1565521015}
   m_LocalEulerAnglesHint: {x: 0, y: 30, z: 0}
+--- !u!114 &922936932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 922936927}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a861ad2283164b8baa82b338b98561e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HouseDelivery
 --- !u!1 &981140638
 GameObject:
   m_ObjectHideFlags: 0
@@ -2478,6 +2637,7 @@ GameObject:
   - component: {fileID: 981140640}
   - component: {fileID: 981140639}
   - component: {fileID: 981140641}
+  - component: {fileID: 981140642}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -2544,6 +2704,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
   walkSpeed: 7
   orientation: {fileID: 1464979354}
+--- !u!114 &981140642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 981140638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f58e65f922b214819899cdf01a8f7458, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PickupFood
+  isInPickupZone: 0
+  currentFood: {fileID: 0}
 --- !u!1 &1006407718
 GameObject:
   m_ObjectHideFlags: 0
@@ -3308,8 +3482,10 @@ GameObject:
   - component: {fileID: 1380106961}
   - component: {fileID: 1380106960}
   - component: {fileID: 1380106959}
+  - component: {fileID: 1380106964}
+  - component: {fileID: 1380106963}
   m_Layer: 0
-  m_Name: Bag
+  m_Name: Bag_One
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3330,7 +3506,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -3401,16 +3577,53 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1380106958}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.32, y: 0.406, z: -4.08}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.1042, y: 0.11828998, z: -0.59303}
   m_LocalScale: {x: 0.4526582, y: 0.4526582, z: 0.4526582}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1726395941}
-  - {fileID: 90558557}
-  - {fileID: 1508828405}
-  m_Father: {fileID: 0}
+  m_Children: []
+  m_Father: {fileID: 1800173912}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1380106963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1380106958}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bd4be106a35b40a7b2dd6b368ec1709, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Food
+  destinationHouseTag: 
+--- !u!54 &1380106964
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1380106958}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1428389957
 GameObject:
   m_ObjectHideFlags: 0
@@ -3496,6 +3709,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1462725867}
   - component: {fileID: 1462725868}
+  - component: {fileID: 1462725869}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -3531,6 +3745,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PauseMenu
   pauseMenuUI: {fileID: 1313434863}
+--- !u!114 &1462725869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1462725866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8551f3557c95e4c7b91ad143bed24418, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameManager
+  foodItems:
+  - {fileID: 1380106963}
+  - {fileID: 90558558}
+  - {fileID: 1726395942}
+  - {fileID: 1508828406}
 --- !u!1 &1464979353
 GameObject:
   m_ObjectHideFlags: 0
@@ -3711,8 +3942,10 @@ GameObject:
   - component: {fileID: 1508828404}
   - component: {fileID: 1508828403}
   - component: {fileID: 1508828402}
+  - component: {fileID: 1508828407}
+  - component: {fileID: 1508828406}
   m_Layer: 0
-  m_Name: Bag (3)
+  m_Name: Bag_Four
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3733,7 +3966,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -3805,12 +4038,118 @@ Transform:
   m_GameObject: {fileID: 1508828401}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.957383, y: 0, z: 0}
+  m_LocalPosition: {x: 1.1398001, y: 0.11828998, z: -0.59303}
+  m_LocalScale: {x: 0.4526582, y: 0.4526582, z: 0.4526582}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1800173912}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1508828406
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1508828401}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bd4be106a35b40a7b2dd6b368ec1709, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Food
+  destinationHouseTag: 
+--- !u!54 &1508828407
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1508828401}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!1 &1559582552
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1559582553}
+  - component: {fileID: 1559582555}
+  - component: {fileID: 1559582554}
+  m_Layer: 0
+  m_Name: PickUpZone
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1559582553
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1559582552}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0.994}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1380106962}
+  m_Father: {fileID: 1567451575}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1559582554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1559582552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 038ad5583825345af92ed96b0941e0ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PickupZone
+--- !u!65 &1559582555
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1559582552}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.39252934, y: 1, z: 0.32536048}
+  m_Center: {x: 0.18784614, y: 0, z: 0.3373197}
 --- !u!1 &1565521014
 GameObject:
   m_ObjectHideFlags: 0
@@ -3965,6 +4304,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1100181368}
+  - {fileID: 1559582553}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1583625271
@@ -4207,6 +4547,7 @@ GameObject:
   - component: {fileID: 1639939374}
   - component: {fileID: 1639939373}
   - component: {fileID: 1639939372}
+  - component: {fileID: 1639939376}
   m_Layer: 0
   m_Name: HouseEight
   m_TagString: House_Eight
@@ -4229,7 +4570,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -4307,6 +4648,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1565521015}
   m_LocalEulerAnglesHint: {x: 0, y: 330, z: 0}
+--- !u!114 &1639939376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1639939371}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a861ad2283164b8baa82b338b98561e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HouseDelivery
 --- !u!1 &1726395937
 GameObject:
   m_ObjectHideFlags: 0
@@ -4319,8 +4672,10 @@ GameObject:
   - component: {fileID: 1726395940}
   - component: {fileID: 1726395939}
   - component: {fileID: 1726395938}
+  - component: {fileID: 1726395943}
+  - component: {fileID: 1726395942}
   m_Layer: 0
-  m_Name: Bag (2)
+  m_Name: Bag_Three
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4341,7 +4696,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -4413,11 +4768,86 @@ Transform:
   m_GameObject: {fileID: 1726395937}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.324805, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.40080023, y: 0.11828998, z: -0.59303}
+  m_LocalScale: {x: 0.4526582, y: 0.4526582, z: 0.4526582}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1380106962}
+  m_Father: {fileID: 1800173912}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1726395942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1726395937}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bd4be106a35b40a7b2dd6b368ec1709, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Food
+  destinationHouseTag: 
+--- !u!54 &1726395943
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1726395937}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!1 &1800173911
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1800173912}
+  m_Layer: 0
+  m_Name: Bag_grp
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1800173912
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1800173911}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.4242, y: 0.28771, z: -3.48697}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1380106962}
+  - {fileID: 90558557}
+  - {fileID: 1726395941}
+  - {fileID: 1508828405}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1908553746
 GameObject:
@@ -4643,6 +5073,7 @@ GameObject:
   - component: {fileID: 2033720695}
   - component: {fileID: 2033720694}
   - component: {fileID: 2033720693}
+  - component: {fileID: 2033720697}
   m_Layer: 0
   m_Name: HouseThree
   m_TagString: House_Three
@@ -4665,7 +5096,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -4743,6 +5174,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1565521015}
   m_LocalEulerAnglesHint: {x: 0, y: 120, z: 0}
+--- !u!114 &2033720697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2033720692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a861ad2283164b8baa82b338b98561e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HouseDelivery
 --- !u!1 &2062371313
 GameObject:
   m_ObjectHideFlags: 0
@@ -4755,6 +5198,7 @@ GameObject:
   - component: {fileID: 2062371316}
   - component: {fileID: 2062371315}
   - component: {fileID: 2062371314}
+  - component: {fileID: 2062371318}
   m_Layer: 0
   m_Name: HouseSeven
   m_TagString: House_Seven
@@ -4777,7 +5221,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -4855,6 +5299,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1565521015}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2062371318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2062371313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a861ad2283164b8baa82b338b98561e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HouseDelivery
 --- !u!1 &2110122283
 GameObject:
   m_ObjectHideFlags: 0
@@ -4998,11 +5454,11 @@ SceneRoots:
   m_Roots:
   - {fileID: 1356427873}
   - {fileID: 1462725867}
-  - {fileID: 882162022}
   - {fileID: 1908553748}
   - {fileID: 885496150}
   - {fileID: 1948102201}
   - {fileID: 981140640}
   - {fileID: 1567451575}
-  - {fileID: 1380106962}
+  - {fileID: 1800173912}
   - {fileID: 1313434867}
+  - {fileID: 882162022}

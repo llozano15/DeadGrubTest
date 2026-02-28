@@ -10,6 +10,8 @@ public class PickupZone : MonoBehaviour
         {
             player.isInPickupZone = true;
         }
+
+        Debug.Log("Player entered pickup zone.");
     }
 
     private void OnTriggerExit(Collider other)
@@ -20,5 +22,7 @@ public class PickupZone : MonoBehaviour
         {
             player.isInPickupZone = false;
         }
+
+        Debug.Log("Player exited pickup zone.");
     }
 }

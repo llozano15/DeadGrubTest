@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class HouseDelivery : MonoBehaviour
+public class FoodDelivery : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
