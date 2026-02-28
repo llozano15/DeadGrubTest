@@ -6,27 +6,19 @@ public class PickupZone : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        PickupFood player = other.GetComponent<PickupFood>();
-
-        if (player != null)
+        if (other.CompareTag("Player"))
         {
-            player.pickupZone = this;
             isInPickupZone = true;
+            Debug.Log("Player entered pickup zone");
         }
-
-        Debug.Log("Player entered pickup zone.");
     }
 
     private void OnTriggerExit(Collider other)
     {
-        PickupFood player = other.GetComponent<PickupFood>();
-
-        if (player != null)
+        if (other.CompareTag("Player"))
         {
-            player.pickupZone = null;
             isInPickupZone = false;
+            Debug.Log("Player left pickup zone");
         }
-
-        Debug.Log("Player exited pickup zone.");
     }
 }

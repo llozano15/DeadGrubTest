@@ -5,8 +5,6 @@ public class PickupFood : MonoBehaviour
     public PickupZone pickupZone;
     public Food currentFood = null;
 
-
-
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -16,7 +14,7 @@ public class PickupFood : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (pickupZone.isInPickupZone && currentFood == null)
+        if (pickupZone != null && pickupZone.isInPickupZone && currentFood == null)
         {
             if (Input.GetKeyDown(KeyCode.F))
             {
