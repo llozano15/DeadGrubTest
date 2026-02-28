@@ -2716,7 +2716,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f58e65f922b214819899cdf01a8f7458, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PickupFood
-  isInPickupZone: 0
+  pickupZone: {fileID: 1559582554}
   currentFood: {fileID: 0}
 --- !u!1 &1006407718
 GameObject:
@@ -4129,6 +4129,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 038ad5583825345af92ed96b0941e0ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PickupZone
+  isInPickupZone: 0
 --- !u!65 &1559582555
 BoxCollider:
   m_ObjectHideFlags: 0

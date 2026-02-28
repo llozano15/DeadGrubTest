@@ -1,14 +1,17 @@
 using UnityEngine;
 
 public class PickupZone : MonoBehaviour
-{
+{   
+    public bool isInPickupZone = false;
+
     private void OnTriggerEnter(Collider other)
     {
         PickupFood player = other.GetComponent<PickupFood>();
 
         if (player != null)
         {
-            player.isInPickupZone = true;
+            player.pickupZone = this;
+            isInPickupZone = true;
         }
 
         Debug.Log("Player entered pickup zone.");
@@ -20,7 +23,8 @@ public class PickupZone : MonoBehaviour
 
         if (player != null)
         {
-            player.isInPickupZone = false;
+            player.pickupZone = null;
+            isInPickupZone = false;
         }
 
         Debug.Log("Player exited pickup zone.");

@@ -2,8 +2,10 @@ using UnityEngine;
 
 public class PickupFood : MonoBehaviour
 {   
-    public bool isInPickupZone = false;
+    public PickupZone pickupZone;
     public Food currentFood = null;
+
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -14,7 +16,7 @@ public class PickupFood : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (isInPickupZone && currentFood == null)
+        if (pickupZone.isInPickupZone && currentFood == null)
         {
             if (Input.GetKeyDown(KeyCode.F))
             {
