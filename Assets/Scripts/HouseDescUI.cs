@@ -1,15 +1,16 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class HouseDescUI : MonoBehaviour
 {
-    public GameObject Container;
+    public GameObject NotePad;
     private Animator anim;
     private bool isOpen = false;
 
     void Start()
     {
         Time.timeScale = 1;
-        anim = Container.GetComponent<Animator>();
+        anim = NotePad.GetComponent<Animator>();
         anim.enabled = false;
     }
 
