@@ -1,6 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
-
+/*
 public class HouseDescUI : MonoBehaviour
 {
     public GameObject NotePad;
@@ -42,4 +42,4 @@ public class HouseDescUI : MonoBehaviour
         anim.Play("DescSlideOut");
         Time.timeScale = 1;
     }
-}
+} */
