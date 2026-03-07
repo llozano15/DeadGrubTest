@@ -2606,7 +2606,6 @@ GameObject:
   m_Component:
   - component: {fileID: 710356064}
   - component: {fileID: 710356066}
-  - component: {fileID: 710356067}
   - component: {fileID: 710356065}
   m_Layer: 5
   m_Name: NotePad
@@ -2674,18 +2673,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 710356063}
   m_CullTransparentMesh: 1
---- !u!114 &710356067
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 710356063}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f2cc7fefe9c76c4ea5772be07df9f27, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::HouseDescUI
 --- !u!1 &722386243
 GameObject:
   m_ObjectHideFlags: 0
