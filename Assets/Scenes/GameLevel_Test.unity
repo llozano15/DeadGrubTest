@@ -460,6 +460,66 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!1 &131382246
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 131382247}
+  - component: {fileID: 131382248}
+  m_Layer: 0
+  m_Name: Moped
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &131382247
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 131382246}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.95, z: 0.244}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 335515912}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &131382248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 131382246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a861ad2283164b8baa82b338b98561e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FoodDelivery
+  playerCamera: {fileID: 1590467631}
+  player: {fileID: 335515916}
+  raycastDistance: 6
+  validHouseTags:
+  - House_One
+  - House_Two
+  - House_Three
+  - House_Four
+  - House_Five
+  - House_Six
+  - House_Seven
+  - House_Eight
+  - House_Nine
+  - House_Ten
+  - House_Eleven
+  - House_Twelve
 --- !u!1 &198882143
 GameObject:
   m_ObjectHideFlags: 0
@@ -472,7 +532,6 @@ GameObject:
   - component: {fileID: 198882146}
   - component: {fileID: 198882145}
   - component: {fileID: 198882144}
-  - component: {fileID: 198882148}
   m_Layer: 0
   m_Name: HouseTwelve
   m_TagString: House_Twelve
@@ -573,18 +632,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1565521015}
   m_LocalEulerAnglesHint: {x: 0, y: 210, z: 0}
---- !u!114 &198882148
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 198882143}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8a861ad2283164b8baa82b338b98561e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::HouseDelivery
 --- !u!1 &223033598
 GameObject:
   m_ObjectHideFlags: 0
@@ -1166,7 +1213,6 @@ GameObject:
   - component: {fileID: 325581978}
   - component: {fileID: 325581977}
   - component: {fileID: 325581976}
-  - component: {fileID: 325581980}
   m_Layer: 0
   m_Name: HouseNine
   m_TagString: House_Nine
@@ -1267,18 +1313,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1565521015}
   m_LocalEulerAnglesHint: {x: 0, y: 300, z: 0}
---- !u!114 &325581980
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 325581975}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8a861ad2283164b8baa82b338b98561e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::HouseDelivery
 --- !u!1 &335515911
 GameObject:
   m_ObjectHideFlags: 0
@@ -1316,6 +1350,7 @@ Transform:
   m_Children:
   - {fileID: 1464979354}
   - {fileID: 1095807926}
+  - {fileID: 131382247}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!136 &335515913
@@ -1465,7 +1500,6 @@ GameObject:
   - component: {fileID: 342059350}
   - component: {fileID: 342059349}
   - component: {fileID: 342059348}
-  - component: {fileID: 342059352}
   m_Layer: 0
   m_Name: HouseFour
   m_TagString: House_Four
@@ -1566,18 +1600,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1565521015}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!114 &342059352
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 342059347}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8a861ad2283164b8baa82b338b98561e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::HouseDelivery
 --- !u!1 &367180794
 GameObject:
   m_ObjectHideFlags: 0
@@ -1864,7 +1886,6 @@ GameObject:
   - component: {fileID: 488068238}
   - component: {fileID: 488068237}
   - component: {fileID: 488068236}
-  - component: {fileID: 488068240}
   m_Layer: 0
   m_Name: HouseFive
   m_TagString: House_Five
@@ -1965,18 +1986,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1565521015}
   m_LocalEulerAnglesHint: {x: 0, y: 60, z: 0}
---- !u!114 &488068240
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 488068235}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8a861ad2283164b8baa82b338b98561e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::HouseDelivery
 --- !u!1 &623599057
 GameObject:
   m_ObjectHideFlags: 0
@@ -1989,7 +1998,6 @@ GameObject:
   - component: {fileID: 623599060}
   - component: {fileID: 623599059}
   - component: {fileID: 623599058}
-  - component: {fileID: 623599062}
   m_Layer: 0
   m_Name: HouseTwo
   m_TagString: House_Two
@@ -2090,18 +2098,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1565521015}
   m_LocalEulerAnglesHint: {x: 0, y: 150, z: 0}
---- !u!114 &623599062
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 623599057}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8a861ad2283164b8baa82b338b98561e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::HouseDelivery
 --- !u!1 &631258934
 GameObject:
   m_ObjectHideFlags: 0
@@ -2251,7 +2247,6 @@ GameObject:
   - component: {fileID: 670393850}
   - component: {fileID: 670393849}
   - component: {fileID: 670393848}
-  - component: {fileID: 670393852}
   m_Layer: 0
   m_Name: HouseOne
   m_TagString: House_One
@@ -2352,18 +2347,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1565521015}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &670393852
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 670393847}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8a861ad2283164b8baa82b338b98561e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::HouseDelivery
 --- !u!1 &695551125
 GameObject:
   m_ObjectHideFlags: 0
@@ -2513,7 +2496,6 @@ GameObject:
   - component: {fileID: 705527861}
   - component: {fileID: 705527860}
   - component: {fileID: 705527859}
-  - component: {fileID: 705527863}
   m_Layer: 0
   m_Name: HouseTen
   m_TagString: House_Ten
@@ -2614,18 +2596,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1565521015}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!114 &705527863
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 705527858}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8a861ad2283164b8baa82b338b98561e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::HouseDelivery
 --- !u!1 &710356063
 GameObject:
   m_ObjectHideFlags: 0
@@ -2644,7 +2614,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &710356064
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2663,7 +2633,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 299.2, y: 30.4}
+  m_AnchoredPosition: {x: 299.2, y: 30.400024}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &710356065
@@ -2716,7 +2686,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f2cc7fefe9c76c4ea5772be07df9f27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HouseDescUI
-  NotePad: {fileID: 710356063}
 --- !u!1 &722386243
 GameObject:
   m_ObjectHideFlags: 0
@@ -3176,7 +3145,6 @@ GameObject:
   - component: {fileID: 879969697}
   - component: {fileID: 879969696}
   - component: {fileID: 879969695}
-  - component: {fileID: 879969699}
   m_Layer: 0
   m_Name: HouseEleven
   m_TagString: House_Eleven
@@ -3277,18 +3245,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1565521015}
   m_LocalEulerAnglesHint: {x: 0, y: 240, z: 0}
---- !u!114 &879969699
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 879969694}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8a861ad2283164b8baa82b338b98561e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::HouseDelivery
 --- !u!1 &882162019
 GameObject:
   m_ObjectHideFlags: 0
@@ -3487,7 +3443,6 @@ GameObject:
   - component: {fileID: 922936930}
   - component: {fileID: 922936929}
   - component: {fileID: 922936928}
-  - component: {fileID: 922936932}
   m_Layer: 0
   m_Name: HouseSix
   m_TagString: House_Six
@@ -3588,18 +3543,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1565521015}
   m_LocalEulerAnglesHint: {x: 0, y: 30, z: 0}
---- !u!114 &922936932
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 922936927}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8a861ad2283164b8baa82b338b98561e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::HouseDelivery
 --- !u!1 &954073091
 GameObject:
   m_ObjectHideFlags: 0
@@ -6252,7 +6195,6 @@ GameObject:
   - component: {fileID: 1639939374}
   - component: {fileID: 1639939373}
   - component: {fileID: 1639939372}
-  - component: {fileID: 1639939376}
   m_Layer: 0
   m_Name: HouseEight
   m_TagString: House_Eight
@@ -6353,18 +6295,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1565521015}
   m_LocalEulerAnglesHint: {x: 0, y: 330, z: 0}
---- !u!114 &1639939376
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1639939371}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8a861ad2283164b8baa82b338b98561e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::HouseDelivery
 --- !u!1 &1667377493
 GameObject:
   m_ObjectHideFlags: 0
@@ -7165,7 +7095,6 @@ GameObject:
   - component: {fileID: 2033720695}
   - component: {fileID: 2033720694}
   - component: {fileID: 2033720693}
-  - component: {fileID: 2033720697}
   m_Layer: 0
   m_Name: HouseThree
   m_TagString: House_Three
@@ -7266,18 +7195,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1565521015}
   m_LocalEulerAnglesHint: {x: 0, y: 120, z: 0}
---- !u!114 &2033720697
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2033720692}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8a861ad2283164b8baa82b338b98561e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::HouseDelivery
 --- !u!1 &2062371313
 GameObject:
   m_ObjectHideFlags: 0
@@ -7290,7 +7207,6 @@ GameObject:
   - component: {fileID: 2062371316}
   - component: {fileID: 2062371315}
   - component: {fileID: 2062371314}
-  - component: {fileID: 2062371318}
   m_Layer: 0
   m_Name: HouseSeven
   m_TagString: House_Seven
@@ -7391,18 +7307,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1565521015}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2062371318
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2062371313}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8a861ad2283164b8baa82b338b98561e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::HouseDelivery
 --- !u!1 &2110122283
 GameObject:
   m_ObjectHideFlags: 0
