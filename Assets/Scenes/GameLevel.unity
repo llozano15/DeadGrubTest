@@ -254,6 +254,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -6683743992336590956, guid: c4b08cfe00c3aa9469dc24dd5199659f, type: 3}
+      propertyPath: m_Name
+      value: House_Two
+      objectReference: {fileID: 0}
+    - target: {fileID: -6683743992336590956, guid: c4b08cfe00c3aa9469dc24dd5199659f, type: 3}
+      propertyPath: m_TagString
+      value: House_Two
+      objectReference: {fileID: 0}
     - target: {fileID: -2011144317469910386, guid: c4b08cfe00c3aa9469dc24dd5199659f, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.13
@@ -268,11 +276,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c4b08cfe00c3aa9469dc24dd5199659f, type: 3}
       propertyPath: m_Name
-      value: PublicBuilding_5C (Two)
+      value: House_Two
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c4b08cfe00c3aa9469dc24dd5199659f, type: 3}
       propertyPath: m_TagString
-      value: House_Two
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 4860884733252827142, guid: c4b08cfe00c3aa9469dc24dd5199659f, type: 3}
+      propertyPath: m_Name
+      value: Model
+      objectReference: {fileID: 0}
+    - target: {fileID: 4860884733252827142, guid: c4b08cfe00c3aa9469dc24dd5199659f, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4449,11 +4465,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: b91375cd94bd7d2469582e77b4158641, type: 3}
       propertyPath: m_Name
-      value: PublicBuilding_4C (six)
+      value: House_Six
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: b91375cd94bd7d2469582e77b4158641, type: 3}
       propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 2747171449548598409, guid: b91375cd94bd7d2469582e77b4158641, type: 3}
+      propertyPath: m_Name
       value: House_Six
+      objectReference: {fileID: 0}
+    - target: {fileID: 2747171449548598409, guid: b91375cd94bd7d2469582e77b4158641, type: 3}
+      propertyPath: m_TagString
+      value: House_Six
+      objectReference: {fileID: 0}
+    - target: {fileID: 4860884733252827142, guid: b91375cd94bd7d2469582e77b4158641, type: 3}
+      propertyPath: m_Name
+      value: Model
+      objectReference: {fileID: 0}
+    - target: {fileID: 4860884733252827142, guid: b91375cd94bd7d2469582e77b4158641, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 5157837463258011317, guid: b91375cd94bd7d2469582e77b4158641, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4593,11 +4625,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: b91375cd94bd7d2469582e77b4158641, type: 3}
       propertyPath: m_Name
-      value: PublicBuilding_4C (one)
+      value: House_One
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: b91375cd94bd7d2469582e77b4158641, type: 3}
       propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 2747171449548598409, guid: b91375cd94bd7d2469582e77b4158641, type: 3}
+      propertyPath: m_Name
       value: House_One
+      objectReference: {fileID: 0}
+    - target: {fileID: 2747171449548598409, guid: b91375cd94bd7d2469582e77b4158641, type: 3}
+      propertyPath: m_TagString
+      value: House_One
+      objectReference: {fileID: 0}
+    - target: {fileID: 4860884733252827142, guid: b91375cd94bd7d2469582e77b4158641, type: 3}
+      propertyPath: m_Name
+      value: Model
+      objectReference: {fileID: 0}
+    - target: {fileID: 4860884733252827142, guid: b91375cd94bd7d2469582e77b4158641, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 5157837463258011317, guid: b91375cd94bd7d2469582e77b4158641, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5291,6 +5339,7 @@ Transform:
   m_Children:
   - {fileID: 1464979354}
   - {fileID: 1095807926}
+  - {fileID: 970398307}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!136 &335515913
@@ -5385,7 +5434,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f58e65f922b214819899cdf01a8f7458, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PickupFood
-  pickupZone: {fileID: 0}
+  pickupZone: {fileID: 441386889}
   currentFood: {fileID: 0}
 --- !u!114 &335515917
 MonoBehaviour:
@@ -5940,13 +5989,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -4506596505486745833, guid: 1721963e512bb8f48a8170b77bb3c776, type: 3}
+      propertyPath: m_Name
+      value: House_Three
+      objectReference: {fileID: 0}
+    - target: {fileID: -4506596505486745833, guid: 1721963e512bb8f48a8170b77bb3c776, type: 3}
+      propertyPath: m_TagString
+      value: House_Three
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 1721963e512bb8f48a8170b77bb3c776, type: 3}
       propertyPath: m_Name
-      value: PublicBuilding_3C (three)
+      value: House_Three
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 1721963e512bb8f48a8170b77bb3c776, type: 3}
       propertyPath: m_TagString
-      value: House_Three
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 4860884733252827142, guid: 1721963e512bb8f48a8170b77bb3c776, type: 3}
+      propertyPath: m_Name
+      value: Model
+      objectReference: {fileID: 0}
+    - target: {fileID: 4860884733252827142, guid: 1721963e512bb8f48a8170b77bb3c776, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 7197518219860292985, guid: 1721963e512bb8f48a8170b77bb3c776, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6024,6 +6089,73 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!1 &441386887
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 441386888}
+  - component: {fileID: 441386889}
+  - component: {fileID: 441386890}
+  m_Layer: 0
+  m_Name: PickupZone
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &441386888
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 441386887}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.029, y: -0.168, z: 0.07}
+  m_LocalScale: {x: 0.13435, y: 0.12526, z: 0.14188}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1114143092}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &441386889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 441386887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 038ad5583825345af92ed96b0941e0ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PickupZone
+  isInPickupZone: 0
+--- !u!65 &441386890
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 441386887}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.5219892, y: 0.5949763, z: 0.9999997}
+  m_Center: {x: -0.23900487, y: -0.12873012, z: -4.443338e-17}
 --- !u!4 &607968131 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: f2a7c8b38881114449e387012a6d6d9a, type: 3}
@@ -6166,131 +6298,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 631258934}
   m_CullTransparentMesh: 1
---- !u!1 &670393847
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 670393851}
-  - component: {fileID: 670393850}
-  - component: {fileID: 670393849}
-  - component: {fileID: 670393848}
-  - component: {fileID: 670393852}
-  m_Layer: 0
-  m_Name: HouseOne
-  m_TagString: House_One
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!65 &670393848
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 670393847}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &670393849
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 670393847}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_MaskInteraction: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &670393850
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 670393847}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &670393851
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 670393847}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.18941975, y: 2.4127998, z: -58.79148}
-  m_LocalScale: {x: 11.88131, y: 5.239927, z: 8.545217}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1565521015}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &670393852
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 670393847}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8a861ad2283164b8baa82b338b98561e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::HouseDelivery
 --- !u!1 &695551125
 GameObject:
   m_ObjectHideFlags: 0
@@ -7211,13 +7218,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -4506596505486745833, guid: 1721963e512bb8f48a8170b77bb3c776, type: 3}
+      propertyPath: m_Name
+      value: House_Ten
+      objectReference: {fileID: 0}
+    - target: {fileID: -4506596505486745833, guid: 1721963e512bb8f48a8170b77bb3c776, type: 3}
+      propertyPath: m_TagString
+      value: House_Ten
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 1721963e512bb8f48a8170b77bb3c776, type: 3}
       propertyPath: m_Name
-      value: PublicBuilding_3C (Ten)
+      value: House_Ten
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 1721963e512bb8f48a8170b77bb3c776, type: 3}
       propertyPath: m_TagString
-      value: House_Ten
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 4860884733252827142, guid: 1721963e512bb8f48a8170b77bb3c776, type: 3}
+      propertyPath: m_Name
+      value: Model
+      objectReference: {fileID: 0}
+    - target: {fileID: 4860884733252827142, guid: 1721963e512bb8f48a8170b77bb3c776, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 7197518219860292985, guid: 1721963e512bb8f48a8170b77bb3c776, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7432,6 +7455,66 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 954073091}
   m_CullTransparentMesh: 1
+--- !u!1 &970398306
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 970398307}
+  - component: {fileID: 970398308}
+  m_Layer: 0
+  m_Name: Moped
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &970398307
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 970398306}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 335515912}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &970398308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 970398306}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a861ad2283164b8baa82b338b98561e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FoodDelivery
+  playerCamera: {fileID: 1590467631}
+  player: {fileID: 335515916}
+  raycastDistance: 6
+  validHouseTags:
+  - House_One
+  - House_Two
+  - House_Three
+  - House_Four
+  - House_Five
+  - House_Six
+  - House_Seven
+  - House_Eight
+  - House_Nine
+  - House_Ten
+  - House_Eleven
+  - House_Twelve
 --- !u!4 &992290116 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1721963e512bb8f48a8170b77bb3c776, type: 3}
@@ -7577,6 +7660,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -6683743992336590956, guid: c4b08cfe00c3aa9469dc24dd5199659f, type: 3}
+      propertyPath: m_Name
+      value: House_Five
+      objectReference: {fileID: 0}
+    - target: {fileID: -6683743992336590956, guid: c4b08cfe00c3aa9469dc24dd5199659f, type: 3}
+      propertyPath: m_TagString
+      value: House_Five
+      objectReference: {fileID: 0}
     - target: {fileID: -2011144317469910386, guid: c4b08cfe00c3aa9469dc24dd5199659f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.25
@@ -7591,11 +7682,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c4b08cfe00c3aa9469dc24dd5199659f, type: 3}
       propertyPath: m_Name
-      value: PublicBuilding_5C (five)
+      value: House_Five
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c4b08cfe00c3aa9469dc24dd5199659f, type: 3}
       propertyPath: m_TagString
-      value: House_Five
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 4860884733252827142, guid: c4b08cfe00c3aa9469dc24dd5199659f, type: 3}
+      propertyPath: m_Name
+      value: Model
+      objectReference: {fileID: 0}
+    - target: {fileID: 4860884733252827142, guid: c4b08cfe00c3aa9469dc24dd5199659f, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7721,6 +7820,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0.141
       objectReference: {fileID: 0}
+    - target: {fileID: -5653110195883648285, guid: f2a7c8b38881114449e387012a6d6d9a, type: 3}
+      propertyPath: m_Name
+      value: Model
+      objectReference: {fileID: 0}
+    - target: {fileID: -5653110195883648285, guid: f2a7c8b38881114449e387012a6d6d9a, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: -4563954949401826696, guid: f2a7c8b38881114449e387012a6d6d9a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.11
@@ -7735,9 +7842,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f2a7c8b38881114449e387012a6d6d9a, type: 3}
       propertyPath: m_Name
-      value: PublicBuilding_7C (Eight)
+      value: House_Eight
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f2a7c8b38881114449e387012a6d6d9a, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 6840894718751348517, guid: f2a7c8b38881114449e387012a6d6d9a, type: 3}
+      propertyPath: m_Name
+      value: House_Eight
+      objectReference: {fileID: 0}
+    - target: {fileID: 6840894718751348517, guid: f2a7c8b38881114449e387012a6d6d9a, type: 3}
       propertyPath: m_TagString
       value: House_Eight
       objectReference: {fileID: 0}
@@ -7977,6 +8092,11 @@ CanvasRenderer:
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: b91375cd94bd7d2469582e77b4158641, type: 3}
   m_PrefabInstance: {fileID: 178845913}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1114143092 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 2e84c6f0c3d07f44fab7c58198d10caa, type: 3}
+  m_PrefabInstance: {fileID: 1668185045}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1117651085
 GameObject:
@@ -9547,38 +9667,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1542456056}
   m_CullTransparentMesh: 1
---- !u!1 &1565521014
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1565521015}
-  m_Layer: 0
-  m_Name: House_grp
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1565521015
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1565521014}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.6, y: 0, z: 0.8}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 670393851}
-  m_Father: {fileID: 1948102201}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1576298079
 GameObject:
   m_ObjectHideFlags: 0
@@ -10147,7 +10235,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 2e84c6f0c3d07f44fab7c58198d10caa, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 441386888}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2e84c6f0c3d07f44fab7c58198d10caa, type: 3}
 --- !u!1001 &1691035078
@@ -10210,6 +10301,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -1.772
       objectReference: {fileID: 0}
+    - target: {fileID: -5653110195883648285, guid: f2a7c8b38881114449e387012a6d6d9a, type: 3}
+      propertyPath: m_Name
+      value: Model
+      objectReference: {fileID: 0}
+    - target: {fileID: -5653110195883648285, guid: f2a7c8b38881114449e387012a6d6d9a, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: -4563954949401826696, guid: f2a7c8b38881114449e387012a6d6d9a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0
@@ -10224,9 +10323,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f2a7c8b38881114449e387012a6d6d9a, type: 3}
       propertyPath: m_Name
-      value: PublicBuilding_7C (twelve)
+      value: House_Twelve
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f2a7c8b38881114449e387012a6d6d9a, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 6840894718751348517, guid: f2a7c8b38881114449e387012a6d6d9a, type: 3}
+      propertyPath: m_Name
+      value: House_Twelve
+      objectReference: {fileID: 0}
+    - target: {fileID: 6840894718751348517, guid: f2a7c8b38881114449e387012a6d6d9a, type: 3}
       propertyPath: m_TagString
       value: House_Twelve
       objectReference: {fileID: 0}
@@ -10359,6 +10466,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -1.564
       objectReference: {fileID: 0}
+    - target: {fileID: -5653110195883648285, guid: f2a7c8b38881114449e387012a6d6d9a, type: 3}
+      propertyPath: m_Name
+      value: Model
+      objectReference: {fileID: 0}
+    - target: {fileID: -5653110195883648285, guid: f2a7c8b38881114449e387012a6d6d9a, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: -4563954949401826696, guid: f2a7c8b38881114449e387012a6d6d9a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.11
@@ -10373,9 +10488,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f2a7c8b38881114449e387012a6d6d9a, type: 3}
       propertyPath: m_Name
-      value: PublicBuilding_7C (four)
+      value: House_Four
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f2a7c8b38881114449e387012a6d6d9a, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 6840894718751348517, guid: f2a7c8b38881114449e387012a6d6d9a, type: 3}
+      propertyPath: m_Name
+      value: House_Four
+      objectReference: {fileID: 0}
+    - target: {fileID: 6840894718751348517, guid: f2a7c8b38881114449e387012a6d6d9a, type: 3}
       propertyPath: m_TagString
       value: House_Four
       objectReference: {fileID: 0}
@@ -10879,11 +11002,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: b91375cd94bd7d2469582e77b4158641, type: 3}
       propertyPath: m_Name
-      value: PublicBuilding_4C (nine)
+      value: House_Nine
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: b91375cd94bd7d2469582e77b4158641, type: 3}
       propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 2747171449548598409, guid: b91375cd94bd7d2469582e77b4158641, type: 3}
+      propertyPath: m_Name
       value: House_Nine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2747171449548598409, guid: b91375cd94bd7d2469582e77b4158641, type: 3}
+      propertyPath: m_TagString
+      value: House_Nine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4860884733252827142, guid: b91375cd94bd7d2469582e77b4158641, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 5157837463258011317, guid: b91375cd94bd7d2469582e77b4158641, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11155,7 +11290,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 71904451}
-  - {fileID: 1565521015}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2005135818
@@ -11218,6 +11352,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -6683743992336590956, guid: c4b08cfe00c3aa9469dc24dd5199659f, type: 3}
+      propertyPath: m_Name
+      value: House_Eleven
+      objectReference: {fileID: 0}
+    - target: {fileID: -6683743992336590956, guid: c4b08cfe00c3aa9469dc24dd5199659f, type: 3}
+      propertyPath: m_TagString
+      value: House_Eleven
+      objectReference: {fileID: 0}
     - target: {fileID: -2011144317469910386, guid: c4b08cfe00c3aa9469dc24dd5199659f, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.25
@@ -11232,11 +11374,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c4b08cfe00c3aa9469dc24dd5199659f, type: 3}
       propertyPath: m_Name
-      value: PublicBuilding_5C (Eleven)
+      value: House_Eleven
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c4b08cfe00c3aa9469dc24dd5199659f, type: 3}
       propertyPath: m_TagString
-      value: House_Eleven
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 4860884733252827142, guid: c4b08cfe00c3aa9469dc24dd5199659f, type: 3}
+      propertyPath: m_Name
+      value: Model
+      objectReference: {fileID: 0}
+    - target: {fileID: 4860884733252827142, guid: c4b08cfe00c3aa9469dc24dd5199659f, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11495,13 +11645,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -4506596505486745833, guid: 1721963e512bb8f48a8170b77bb3c776, type: 3}
+      propertyPath: m_Name
+      value: House_Seven
+      objectReference: {fileID: 0}
+    - target: {fileID: -4506596505486745833, guid: 1721963e512bb8f48a8170b77bb3c776, type: 3}
+      propertyPath: m_TagString
+      value: House_Seven
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 1721963e512bb8f48a8170b77bb3c776, type: 3}
       propertyPath: m_Name
-      value: PublicBuilding_3C (seven)
+      value: House_Seven
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 1721963e512bb8f48a8170b77bb3c776, type: 3}
       propertyPath: m_TagString
-      value: House_Seven
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 4860884733252827142, guid: 1721963e512bb8f48a8170b77bb3c776, type: 3}
+      propertyPath: m_Name
+      value: Model
+      objectReference: {fileID: 0}
+    - target: {fileID: 4860884733252827142, guid: 1721963e512bb8f48a8170b77bb3c776, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 7197518219860292985, guid: 1721963e512bb8f48a8170b77bb3c776, type: 3}
       propertyPath: m_LocalPosition.x
