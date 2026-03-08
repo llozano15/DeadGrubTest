@@ -30,6 +30,7 @@ public class FoodDelivery : MonoBehaviour
 
                                 Destroy(player.currentFood.gameObject);
                                 player.currentFood = null;
+                                GameManager.Instance.DeliveryCompleted();
                             }
                             else
                             {   

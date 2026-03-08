@@ -21,8 +21,14 @@ EditorBuildSettings:
     path: Assets/Scenes/GameOver.unity
     guid: 25f3767c0f360a847b8566ec3f7027fb
   - enabled: 1
-    path: Assets/Scenes/GameWon.unity
+    path: Assets/Scenes/WinScene.unity
     guid: 3fc25c25d82958248aa394bfd46c60b3
+  - enabled: 1
+    path: Assets/Scenes/NeutralScene.unity
+    guid: f00ded1b45f1544caa3e03e27852df49
+  - enabled: 1
+    path: Assets/Scenes/LoseScene.unity
+    guid: 43fc0691c9d58484185b0edfd81fbf55
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0

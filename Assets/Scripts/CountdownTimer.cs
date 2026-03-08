@@ -6,11 +6,7 @@ public class CountdownTimer : MonoBehaviour
     [SerializeField] TextMeshProUGUI timerText;
     [SerializeField] float timeRemaining = 300f;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    private bool timerFinished = false;
 
     // Update is called once per frame
     void Update()
@@ -23,6 +19,12 @@ public class CountdownTimer : MonoBehaviour
         else
         {
             timeRemaining = 0;
+
+            if (!timerFinished)
+            {
+                timerFinished = true;
+                GameManager.Instance.GameOver();
+            }
         }
 
         //Shows timer in minutes and seconds format
