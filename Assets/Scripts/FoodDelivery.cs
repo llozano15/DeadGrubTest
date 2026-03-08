@@ -32,7 +32,8 @@ public class FoodDelivery : MonoBehaviour
                                 player.currentFood = null;
                             }
                             else
-                            {
+                            {   
+                                PercentageRatingManager.Instance.WrongDelivery();
                                 Debug.Log("Wrong House!");
                             }
                         }
