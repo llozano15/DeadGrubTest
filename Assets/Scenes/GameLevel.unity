@@ -25087,13 +25087,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1356427870}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.08110311, y: -0.2579052, z: -0.021731531, w: 0.96251494}
+  m_LocalRotation: {x: -0.060578767, y: -0.25830963, z: -0.016232047, w: 0.96402436}
   m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: -729.633, y: -30, z: 0}
+  m_LocalEulerAnglesHint: {x: -727.191, y: -30, z: 0}
 --- !u!1001 &1375780899
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -38517,7 +38517,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: af170af2e8c906240abf5c5f87ea855e, type: 3}
       propertyPath: m_Name
-      value: Untitled 1
+      value: Mail box
       objectReference: {fileID: 0}
     - target: {fileID: 1956460176602337536, guid: af170af2e8c906240abf5c5f87ea855e, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
