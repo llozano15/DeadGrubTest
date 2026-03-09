@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 public class HouseDescUI : MonoBehaviour
 {
-    /*public GameObject NotePad;
+    public GameObject NotePad;
     private Animator anim;
     private bool isOpen = false;
 
@@ -31,15 +31,15 @@ public class HouseDescUI : MonoBehaviour
     public void OpenDesc()
     {
         anim.enabled = true;
-        anim.Play("DescSlideIn");
+        anim.Play("OpenNotepad");
         isOpen = true;
         Time.timeScale = 1;
     }
     //function to close the house description
     public void CloseDesc()
-    {
+    {   
+        anim.Play("CloseNotepad");
         isOpen = false;
-        anim.Play("DescSlideOut");
         Time.timeScale = 1;
-    }*/
+    }
 } 
