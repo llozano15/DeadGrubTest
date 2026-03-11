@@ -29,7 +29,10 @@ public class PercentageRatingManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (ratingSlider.value <= 0f)
+        {
+            GameManager.Instance.GameOver();
+        }
     }
 
     public void WrongDelivery()
