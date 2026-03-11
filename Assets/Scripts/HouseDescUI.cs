@@ -1,8 +1,9 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class HouseDescUI : MonoBehaviour
-{
+{   
     public GameObject NotePad;
     private Animator anim;
     private bool isOpen = false;
@@ -16,7 +17,6 @@ public class HouseDescUI : MonoBehaviour
 
     public void Update()
     {
-
         if (Input.GetKeyUp(KeyCode.Space) && !isOpen)
         {
             OpenDesc();
@@ -35,6 +35,7 @@ public class HouseDescUI : MonoBehaviour
         isOpen = true;
         Time.timeScale = 1;
     }
+    
     //function to close the house description
     public void CloseDesc()
     {   
