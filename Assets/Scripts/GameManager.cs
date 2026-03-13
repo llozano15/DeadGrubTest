@@ -47,8 +47,10 @@ public class GameManager : MonoBehaviour
         {
             int randomIndex = Random.Range(0, houseTags.Length);
             food.destinationHouseTag = houseTags[randomIndex];
+            food.tag = food.destinationHouseTag; // Set the food's tag to match its destination house tag
 
             Debug.Log($"Assigned {food.name} to {food.destinationHouseTag}");
+            Debug.Log("{food.name} to:" + food.gameObject.tag);
             //Debug.Log(food.name + " -> Deliver to: " + food.destinationHouseTag);
         }
     }

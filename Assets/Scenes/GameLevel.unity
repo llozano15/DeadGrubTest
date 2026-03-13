@@ -7971,6 +7971,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PickupFood
   pickupZone: {fileID: 441386889}
   currentFood: {fileID: 0}
+  houseClueDescription: {fileID: 1749373899}
 --- !u!114 &335515917
 MonoBehaviour:
   m_ObjectHideFlags: 0

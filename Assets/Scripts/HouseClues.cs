@@ -5,6 +5,7 @@ public class HouseClues : MonoBehaviour
 {   
     public TextMeshProUGUI houseClueDescription;
     public PickupFood player; //Reference to player's PickupFood script to access the currentFood player is holding
+   public Food currentFood = null;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
