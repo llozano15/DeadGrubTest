@@ -20,12 +20,12 @@ public class PickupFood : MonoBehaviour
     {
         if (currentFood != null)
         {
-            Debug.Log("FOOD");
+            //Debug.Log("FOOD");
             UpdateHouseClueDescription();
         }
         else
         {
-            Debug.Log("Not holding any food");
+            //Debug.Log("Not holding any food");
             houseClueDescription.text = "No Food to Deliver";
         }
 
@@ -63,98 +63,97 @@ public class PickupFood : MonoBehaviour
         if (currentFood.tag == "House_One")
         {
             houseClueDescription.text = "1";
-            Debug.Log("House One");
+            //Debug.Log("House One");
             return;
         }
 
         if (currentFood.tag == "House_Two")
         {
             houseClueDescription.text = "2";
-            Debug.Log("House Two");
+            //Debug.Log("House Two");
             return;
         }
 
         if (currentFood.tag == "House_Three")
         {
             houseClueDescription.text = "3";
-            Debug.Log("House Three");
+            //Debug.Log("House Three");
             return;
         }
 
         if (currentFood.tag == "House_Four")
         {
             houseClueDescription.text = "4";
-            Debug.Log("House Four");
+            //Debug.Log("House Four");
             return;
         }
 
         if (currentFood.tag == "House_Five")
         {
             houseClueDescription.text = "5";
-            Debug.Log("House Five");
+            //Debug.Log("House Five");
             return;
         }
 
         if (currentFood.tag == "House_Six")
         {
             houseClueDescription.text = "6";
-            Debug.Log("House Six");
+            //Debug.Log("House Six");
             return;
         }
 
         if (currentFood.tag == "House_Seven")
         {
             houseClueDescription.text = "7";
-            Debug.Log("House Seven");
+            //Debug.Log("House Seven");
             return;
         }
 
         if (currentFood.tag == "House_Eight")
         {
             houseClueDescription.text = "8";
-            Debug.Log("House Eight");
+            //Debug.Log("House Eight");
             return;
         }
 
         if (currentFood.tag == "House_Nine")
         {
             houseClueDescription.text = "9";
-            Debug.Log("House Nine");
+            //Debug.Log("House Nine");
             return;
         }
 
         if (currentFood.tag == "House_Ten")
         {
             houseClueDescription.text = "10";
-            Debug.Log("House Ten");
+            //Debug.Log("House Ten");
             return;
         }
 
         if (currentFood.tag == "House_Eleven")
         {
             houseClueDescription.text = "11";
-            Debug.Log("House Eleven");
+            //Debug.Log("House Eleven");
             return;
         }
 
         if (currentFood.tag == "House_Twelve")
         {
             houseClueDescription.text = "12";
-            Debug.Log("House Twelve");
+            //Debug.Log("House Twelve");
             return;
         }
 
         if (currentFood.tag == "Untagged")
         {
             houseClueDescription.text = "Untagged";
-            Debug.Log("Untagged Food");
+            //Debug.Log("Untagged Food");
             return;
         }
-
         else
         {
             houseClueDescription.text = "Unknown Food";
-            Debug.Log("Unknown Food");
+            //Debug.Log("Unknown Food");
         }
     }
 }

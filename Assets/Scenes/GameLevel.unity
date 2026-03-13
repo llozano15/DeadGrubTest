@@ -7870,9 +7870,9 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1590467632}
   - {fileID: 1464979354}
   - {fileID: 1095807926}
-  - {fileID: 970398307}
   - {fileID: 185245617}
   - {fileID: 438774337}
   m_Father: {fileID: 0}
@@ -10320,11 +10320,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: e87df3d656953c74881c4893004e80a1, type: 3}
       propertyPath: m_Name
-      value: bike4
+      value: Moped
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: e87df3d656953c74881c4893004e80a1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 970398307}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e87df3d656953c74881c4893004e80a1, type: 3}
       insertIndex: -1
@@ -17932,7 +17935,7 @@ GameObject:
   - component: {fileID: 970398307}
   - component: {fileID: 970398308}
   m_Layer: 0
-  m_Name: Moped
+  m_Name: MopedDeliveryFunction
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17946,12 +17949,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 970398306}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -0.58000004, y: 1.36, z: 0.04000008}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 335515912}
+  m_Father: {fileID: 185245617}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &970398308
 MonoBehaviour:
@@ -33395,11 +33398,11 @@ Transform:
   m_GameObject: {fileID: 1590467629}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.426, z: 0.456}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1908553748}
+  m_Father: {fileID: 335515912}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1590467633
 MonoBehaviour:
@@ -44513,52 +44516,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: d01cffe880fa2494b840bfa45f9d0f11, type: 3}
   m_PrefabInstance: {fileID: 1834211319}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1908553746
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1908553748}
-  - component: {fileID: 1908553747}
-  m_Layer: 0
-  m_Name: CameraHolder
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1908553747
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1908553746}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c02397d2787aa49c9a95d213fa7d8ce0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CameraFollow
-  cameraPosition: {fileID: 1095807926}
---- !u!4 &1908553748
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1908553746}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.35355, y: 0.24749, z: -23.8}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1590467632}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1909230993
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -47600,7 +47557,6 @@ SceneRoots:
   - {fileID: 1462725867}
   - {fileID: 602752015}
   - {fileID: 882162022}
-  - {fileID: 1908553748}
   - {fileID: 885496150}
   - {fileID: 1313434867}
   - {fileID: 1948102201}
