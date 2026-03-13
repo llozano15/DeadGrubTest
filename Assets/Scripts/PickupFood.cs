@@ -47,7 +47,7 @@ public class PickupFood : MonoBehaviour
         if (availableFood != null && availableFood.gameObject.activeSelf)
         {
             currentFood = availableFood;
-            //currentFood.gameObject.SetActive(false);
+            currentFood.gameObject.SetActive(false);
 
             Debug.Log("Picked up: " + currentFood.name);
         }
