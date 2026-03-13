@@ -29,7 +29,6 @@ public class PickupFood : MonoBehaviour
             houseClueDescription.text = "No Food to Deliver";
         }
 
-
         if (pickupZone != null && pickupZone.isInPickupZone && currentFood == null)
         {
             if (Input.GetKeyDown(KeyCode.F))
