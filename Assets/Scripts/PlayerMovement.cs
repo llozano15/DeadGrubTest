@@ -4,6 +4,7 @@ public class PlayerMovement : MonoBehaviour
 {   
     public float walkSpeed; //Movement speed variables
     public Transform orientation; //Reference to the player's orientation
+    public GameObject Moped; //Reference to moped game object to transform its rotation with direction player is moving
 
     //Input variables for horizontal & vertical movement
     float horizontalInput;
@@ -11,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
 
     Vector3 moveDirection; //Direction player will move in
     Rigidbody rb; //Reference to player rigidbody
+    Rigidbody mopedRb; //Reference to moped rigidbody
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -19,6 +21,8 @@ public class PlayerMovement : MonoBehaviour
         //Freeze rotation prevents player from tipping over upon collision
         rb = GetComponent<Rigidbody>();
         rb.freezeRotation = true;
+
+        mopedRb = Moped.GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
@@ -44,5 +48,15 @@ public class PlayerMovement : MonoBehaviour
 
         //Move player in calculated direction at specified speed
         rb.MovePosition(transform.position + moveDirection.normalized * walkSpeed * Time.fixedDeltaTime);
+    
+        //Rotate moped to face movement direction of player
+        if (moveDirection != Vector3.zero)
+        {
+            Vector3 right = moveDirection.normalized;
+            Vector3 up = Vector3.up;
+            Vector3 forward = Vector3.Cross(right, up);
+            Quaternion targetRotation = Quaternion.LookRotation(forward, up);
+            Moped.transform.rotation = Quaternion.Slerp(Moped.transform.rotation, targetRotation, Time.fixedDeltaTime * 10f);
+        }
     }
 }

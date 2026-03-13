@@ -7986,6 +7986,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
   walkSpeed: 7
   orientation: {fileID: 1464979354}
+  Moped: {fileID: 29666753}
 --- !u!54 &335515918
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10309,6 +10310,22 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: e87df3d656953c74881c4893004e80a1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -5477749408508380018, guid: e87df3d656953c74881c4893004e80a1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -5477749408508380018, guid: e87df3d656953c74881c4893004e80a1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -5477749408508380018, guid: e87df3d656953c74881c4893004e80a1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -5477749408508380018, guid: e87df3d656953c74881c4893004e80a1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
       objectReference: {fileID: 0}
     - target: {fileID: -2484921068739079471, guid: e87df3d656953c74881c4893004e80a1, type: 3}
       propertyPath: m_LocalPosition.x
