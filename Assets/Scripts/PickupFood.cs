@@ -59,14 +59,14 @@ public class PickupFood : MonoBehaviour
 
     void UpdateHouseClueDescription()
     {
-        if (currentFood.tag == "House_One")
+        if (currentFood.tag == "House_One") //Done
         {
             houseClueDescription.text = "I got a pile of zombies outside.";
             //Debug.Log("House One");
             return;
         }
 
-        if (currentFood.tag == "House_Two")
+        if (currentFood.tag == "House_Two") //Done
         {
             houseClueDescription.text = "I got a red and pink-ish house :P Also, my house is number two!";
             //Debug.Log("House Two");
@@ -87,58 +87,58 @@ public class PickupFood : MonoBehaviour
             return;
         }
 
-        if (currentFood.tag == "House_Five")
+        if (currentFood.tag == "House_Five") //Done
         {
             houseClueDescription.text = "House five. Just leave it in front.";
             //Debug.Log("House Five");
             return;
         }
 
-        if (currentFood.tag == "House_Six")
+        if (currentFood.tag == "House_Six") //Done
         {
             houseClueDescription.text = "House six! Just leave it in front! :)";
             //Debug.Log("House Six");
             return;
         }
 
-        if (currentFood.tag == "House_Seven")
+        if (currentFood.tag == "House_Seven") //Done
         {
             houseClueDescription.text = "I got someone impaled on my fence.";
             //Debug.Log("House Seven");
             return;
         }
 
-        if (currentFood.tag == "House_Eight")
+        if (currentFood.tag == "House_Eight") //Done
         {
             houseClueDescription.text = "My house number is 3 + 5 :)";
             //Debug.Log("House Eight");
             return;
         }
 
-        if (currentFood.tag == "House_Nine")
+        if (currentFood.tag == "House_Nine") //Done
         {
             houseClueDescription.text = "Dave is outside.";
             //Debug.Log("House Nine");
             return;
         }
 
-        if (currentFood.tag == "House_Ten")
+        if (currentFood.tag == "House_Ten") //Done
         {
-            houseClueDescription.text = "My house is the one next to where Dave is standing.";
+            houseClueDescription.text = "My house is the one next to where Dave is standing.Left side.";
             //Debug.Log("House Ten");
             return;
         }
 
-        if (currentFood.tag == "House_Eleven")
+        if (currentFood.tag == "House_Eleven") 
         {
             houseClueDescription.text = "Someone is like… on fire, in front of my house… just ignore’em.";
             //Debug.Log("House Eleven");
             return;
         }
 
-        if (currentFood.tag == "House_Twelve")
+        if (currentFood.tag == "House_Twelve") //Done
         {
-            houseClueDescription.text = "Hi!!! Just leave it in front plz!!!! Thx uuuu!! ^w^";
+            houseClueDescription.text = "Hi!!! Just leave it in front plz!!!! House 12! Thx uuuu!! ^w^";
             //Debug.Log("House Twelve");
             return;
         }
