@@ -8,6 +8,7 @@ public class PercentageRatingManager : MonoBehaviour
 
     public float maxRating = 100f;
     public float deliveryPenalty = 3f;
+    public float civilianCollisionPenalty = 5f;
 
     public Slider ratingSlider;
     public TMP_Text ratingText;
@@ -38,6 +39,16 @@ public class PercentageRatingManager : MonoBehaviour
     public void WrongDelivery()
     {
         maxRating -= deliveryPenalty;
+        maxRating = Mathf.Clamp(maxRating, 0f, 100f);
+
+        Debug.Log("Rating: " + maxRating.ToString("0") + "%");
+
+        UpdateUI();
+    }
+
+    public void CivilianCollision()
+    {
+        maxRating -= civilianCollisionPenalty;
         maxRating = Mathf.Clamp(maxRating, 0f, 100f);
 
         Debug.Log("Rating: " + maxRating.ToString("0") + "%");
