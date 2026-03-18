@@ -39,7 +39,7 @@ public class CivilianAI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (frameCounter % 120 == 0) 
+        if (frameCounter % 300 == 0) 
             CivilianBehavior(); //Call method to handle civilian behavior based on current state
         
         // CivilianBehavior();
