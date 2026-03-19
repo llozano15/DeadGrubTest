@@ -95,18 +95,18 @@ public class CivilianAI : MonoBehaviour
             if (NavMesh.SamplePosition(randomDirection, out hit, 10f, NavMesh.AllAreas))
             {
                 civilianAgent.SetDestination(hit.position); //Set the destination for the NavMeshAgent
-                Debug.Log("Civilian is wandering to: " + hit.position);
+                //Debug.Log("Civilian is wandering to: " + hit.position);
             }
             else
             {
-                Debug.Log("No valid NavMesh position found for wandering.");
+                //Debug.Log("No valid NavMesh position found for wandering.");
             }
         }
 
         if (currentState == CivilianStates.Idle)
         {   
             civilianAgent.SetDestination(transform.position); //Stop moving by setting destination to current position
-            Debug.Log("Civilian is idle at: " + transform.position);
+            //Debug.Log("Civilian is idle at: " + transform.position);
         }
     }
 
@@ -115,8 +115,7 @@ public class CivilianAI : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             PercentageRatingManager.Instance.CivilianCollision(); //Call method to reduce rating when player collides with civilian
-            Debug.Log("Player collided with civilian");            
+            //Debug.Log("Player collided with civilian");            
         }
     }
-   
 }   

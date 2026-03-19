@@ -47,7 +47,8 @@ public class PlayerMovement : MonoBehaviour
         moveDirection = orientation.forward * verticalInput + orientation.right * horizontalInput;
 
         //Move player in calculated direction at specified speed
-        rb.MovePosition(transform.position + moveDirection.normalized * walkSpeed * Time.fixedDeltaTime);
+        // if(!lockPlayer)
+            rb.MovePosition(transform.position + moveDirection.normalized * walkSpeed * Time.fixedDeltaTime);
     
         //Rotate moped to face movement direction of player
         if (moveDirection != Vector3.zero)
