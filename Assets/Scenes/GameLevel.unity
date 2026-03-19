@@ -33131,7 +33131,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 7d186a4e5e9b662418119ffdcb15c6a3, type: 3}
       propertyPath: m_Name
-      value: Zombie@Walking (1)
+      value: CivilianZombieAI
       objectReference: {fileID: 0}
     - target: {fileID: 5866666021909216657, guid: 7d186a4e5e9b662418119ffdcb15c6a3, type: 3}
       propertyPath: m_Controller
@@ -33856,8 +33856,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1162972320}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.84129, y: 13.19452, z: 10.11304}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -5.93071, y: 14.20732, z: 6.5215597}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -33873,7 +33873,7 @@ Transform:
   - {fileID: 998659073}
   - {fileID: 26329674}
   - {fileID: 1271641045}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1948102201}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1165719661
 PrefabInstance:
@@ -35951,8 +35951,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1340804552}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -48.52131, y: 1.77231, z: 28.44873}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -46.61073, y: 2.78511, z: 24.85725}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -35962,7 +35962,7 @@ Transform:
   - {fileID: 604305055}
   - {fileID: 517813005}
   - {fileID: 1467635054}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1948102201}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1343047971
 PrefabInstance:
@@ -51960,6 +51960,8 @@ Transform:
   - {fileID: 817545917}
   - {fileID: 62796943}
   - {fileID: 1565303824}
+  - {fileID: 1340804553}
+  - {fileID: 1162972321}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1948551369
@@ -54695,5 +54697,3 @@ SceneRoots:
   - {fileID: 1942874950}
   - {fileID: 1126972826}
   - {fileID: 1126089989}
-  - {fileID: 1162972321}
-  - {fileID: 1340804553}
