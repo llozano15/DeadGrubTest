@@ -15,12 +15,12 @@ public class CivilianAI : MonoBehaviour
     //public Transform player;
 
     [Header("Wandering Variables")]
-    public float minWanderSpeed = 4f;
-    public float maxWanderSpeed = 6f;
+    public float minWanderSpeed = 2f;
+    public float maxWanderSpeed = 4f;
 
     [Header("Idle Settings")]
-    public float idleProbability = 0.03f;
-    public float idleDuration = 0.01f;
+    public float idleProbability = 0.2f;
+    public float idleDuration = 5f;
 
     [Header("NavMeshAgent Variables")]
     private NavMeshAgent civilianAgent;
@@ -28,32 +28,48 @@ public class CivilianAI : MonoBehaviour
 
     private int frameCounter = 0;
 
+    [Header("Animator")]
+    private Animator civilianAnimator;
+    private bool isWandering = true;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         civilianAgent = GetComponent<NavMeshAgent>(); //Obtain NavMeshAgent component from civilian AI GameObject
+        civilianAnimator = GetComponent<Animator>(); //Obtain Animator component from civilian AI GameObject
         civilianAgent.speed = UnityEngine.Random.Range(minWanderSpeed, maxWanderSpeed); //Assign a random speed (4f to 6f) to each civilian AI
+        civilianAgent.angularSpeed = 120f; //Set angular speed for smoother turning
         currentState = CivilianStates.Wandering; //Set wandering as initial state
+        civilianAnimator.speed = civilianAgent.speed / maxWanderSpeed; //Adjust animation speed based on movement speed
+        CivilianBehavior(); //Call method to handle wandering behavior
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (frameCounter % 300 == 0) 
-            CivilianBehavior(); //Call method to handle civilian behavior based on current state
-        
-        // CivilianBehavior();
+        if (currentState == CivilianStates.Wandering)
+        {
+            if (!civilianAgent.pathPending && civilianAgent.remainingDistance < 0.5f)
+            {
+                CivilianBehavior(); //Call method to handle wandering behavior when destination is reached
+            }
+        }
     }
 
     void Wandering()
     {
         currentState = CivilianStates.Wandering;
+        civilianAnimator.SetBool("isWandering", true);
+
+        civilianAnimator.speed = civilianAgent.speed / maxWanderSpeed; //Adjust animation speed based on movement speed
         Debug.Log("Civilian is wandering");
     }
 
     void Idle()
     {
         currentState = CivilianStates.Idle;
+        civilianAnimator.SetBool("isWandering", false);
+
         Debug.Log("Civilian is idle");
     }
 
@@ -99,9 +115,5 @@ public class CivilianAI : MonoBehaviour
             Debug.Log("Player collided with civilian");
         }
     }
-    //copilot I revised it to have methods that would determine the current state, but my civilian ai gamobject (which is a zombie) is still not moving. I also added a navmesh agent component to the civilian ai gameobject, but it still does not move. Do you have any suggestions on how to fix this?
-    //Make sure the NavMeshAgent component is properly configured (e.g., speed, acceleration, angular speed) and that the NavMesh is baked correctly in your scene. Additionally, check if there are any obstacles or colliders that might be blocking the civilian's movement. You can also add debug logs to see if the wandering behavior is being triggered and if the destination is being set correctly.
-    //can you show me where to add the debug logs to check is everything is working correctly?
-    //Certainly! You can add debug logs in the Wandering() method to check if the wandering behavior is being triggered and if the destination is being set correctly. Here's an example of where to add the debug logs:
-
+   
 }   
