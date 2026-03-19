@@ -19,7 +19,7 @@ public class CivilianAI : MonoBehaviour
     public float maxWanderSpeed = 4f;
 
     [Header("Idle Settings")]
-    public float idleProbability = 0.2f;
+    public float idleProbability = 0.05f;
     public float idleDuration = 5f;
 
     [Header("NavMeshAgent Variables")]
@@ -59,10 +59,10 @@ public class CivilianAI : MonoBehaviour
     void Wandering()
     {
         currentState = CivilianStates.Wandering;
+        civilianAnimator.speed = civilianAgent.speed / maxWanderSpeed; //Adjust animation speed based on movement speed
         civilianAnimator.SetBool("isWandering", true);
 
-        civilianAnimator.speed = civilianAgent.speed / maxWanderSpeed; //Adjust animation speed based on movement speed
-        Debug.Log("Civilian is wandering");
+        //Debug.Log("Civilian is wandering");
     }
 
     void Idle()
@@ -70,7 +70,7 @@ public class CivilianAI : MonoBehaviour
         currentState = CivilianStates.Idle;
         civilianAnimator.SetBool("isWandering", false);
 
-        Debug.Log("Civilian is idle");
+        //Debug.Log("Civilian is idle");
     }
 
     void CivilianBehavior()
