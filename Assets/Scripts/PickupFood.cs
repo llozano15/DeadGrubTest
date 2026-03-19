@@ -73,14 +73,14 @@ public class PickupFood : MonoBehaviour
             return;
         }
 
-        if (currentFood.tag == "House_Three")
+        if (currentFood.tag == "House_Three") //Done
         {
             houseClueDescription.text = "I got a dog outside, if you see him there, that's my house (p.s you can say hi to peanut, he doesn’t bite.)";
             //Debug.Log("House Three");
             return;
         }
 
-        if (currentFood.tag == "House_Four")
+        if (currentFood.tag == "House_Four") //Done
         {
             houseClueDescription.text = "There’s someone eating someone else outside my yard. If you see that, that's my house.";
             //Debug.Log("House Four");
@@ -129,7 +129,7 @@ public class PickupFood : MonoBehaviour
             return;
         }
 
-        if (currentFood.tag == "House_Eleven") 
+        if (currentFood.tag == "House_Eleven") //Done
         {
             houseClueDescription.text = "Someone is like… on fire, in front of my house… just ignore’em.";
             //Debug.Log("House Eleven");
