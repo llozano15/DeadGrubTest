@@ -15,11 +15,11 @@ public class CivilianAI : MonoBehaviour
     //public Transform player;
 
     [Header("Wandering Variables")]
-    public float minWanderSpeed = 2f;
-    public float maxWanderSpeed = 4f;
+    public float minWanderSpeed = 1f;
+    public float maxWanderSpeed = 1.5f;
 
     [Header("Idle Settings")]
-    public float idleProbability = 0.05f;
+    public float idleProbability = 0.3f;
     public float idleDuration = 5f;
 
     [Header("NavMeshAgent Variables")]
@@ -30,18 +30,21 @@ public class CivilianAI : MonoBehaviour
 
     [Header("Animator")]
     private Animator civilianAnimator;
-    private bool isWandering = true;
+    private bool isWandering;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         civilianAgent = GetComponent<NavMeshAgent>(); //Obtain NavMeshAgent component from civilian AI GameObject
         civilianAnimator = GetComponent<Animator>(); //Obtain Animator component from civilian AI GameObject
-        civilianAgent.speed = UnityEngine.Random.Range(minWanderSpeed, maxWanderSpeed); //Assign a random speed (4f to 6f) to each civilian AI
+        civilianAgent.speed = UnityEngine.Random.Range(minWanderSpeed, maxWanderSpeed); //Assign a random speed to each civilian AI
         civilianAgent.angularSpeed = 120f; //Set angular speed for smoother turning
         currentState = CivilianStates.Wandering; //Set wandering as initial state
         civilianAnimator.speed = civilianAgent.speed / maxWanderSpeed; //Adjust animation speed based on movement speed
-        CivilianBehavior(); //Call method to handle wandering behavior
+        isWandering = true;
+        CivilianBehavior();
+        
+        //Debug.Log("Civilian AI initialized with speed: " + civilianAgent.speed);
     }
 
     // Update is called once per frame
@@ -51,24 +54,24 @@ public class CivilianAI : MonoBehaviour
         {
             if (!civilianAgent.pathPending && civilianAgent.remainingDistance < 0.5f)
             {
-                CivilianBehavior(); //Call method to handle wandering behavior when destination is reached
+                CivilianBehavior();
             }
         }
     }
 
     void Wandering()
     {
+        civilianAnimator.SetBool("isWandering", true);
         currentState = CivilianStates.Wandering;
         civilianAnimator.speed = civilianAgent.speed / maxWanderSpeed; //Adjust animation speed based on movement speed
-        civilianAnimator.SetBool("isWandering", true);
 
         //Debug.Log("Civilian is wandering");
     }
 
     void Idle()
     {
-        currentState = CivilianStates.Idle;
         civilianAnimator.SetBool("isWandering", false);
+        currentState = CivilianStates.Idle;
 
         //Debug.Log("Civilian is idle");
     }
@@ -78,13 +81,13 @@ public class CivilianAI : MonoBehaviour
         //Randomly triggers idle behavior based on idleProbability
         if (currentState == CivilianStates.Wandering && UnityEngine.Random.value < idleProbability)
         {
-            Idle(); //Switch to idle state
+            Idle();
             Invoke("Wandering", idleDuration); //Return to wandering after idleDuration seconds
         }
 
         //Handles wandering & idle behavior of civilian AI
         if (currentState == CivilianStates.Wandering)
-        {   
+        {               
             //Set random destination for wandering behavior
             Vector3 randomDirection = UnityEngine.Random.insideUnitSphere * 10f; //Random direction within a radius of 10 units
             randomDirection += transform.position; //Checks if movement is within NavMesh boundaries before moving the target
@@ -101,7 +104,7 @@ public class CivilianAI : MonoBehaviour
         }
 
         if (currentState == CivilianStates.Idle)
-        {
+        {   
             civilianAgent.SetDestination(transform.position); //Stop moving by setting destination to current position
             Debug.Log("Civilian is idle at: " + transform.position);
         }
@@ -112,7 +115,7 @@ public class CivilianAI : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             PercentageRatingManager.Instance.CivilianCollision(); //Call method to reduce rating when player collides with civilian
-            Debug.Log("Player collided with civilian");
+            Debug.Log("Player collided with civilian");            
         }
     }
    
