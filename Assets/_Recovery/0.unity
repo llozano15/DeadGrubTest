@@ -8562,7 +8562,6 @@ MonoBehaviour:
   walkSpeed: 7
   orientation: {fileID: 1464979354}
   Moped: {fileID: 29666753}
-  lockPlayer: 0
 --- !u!54 &335515918
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -11593,16 +11592,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::YapperAI
   player: {fileID: 335515912}
   playerCamera: {fileID: 1590467631}
-  playerMovement: {fileID: 335515917}
-  scoutingSpeed: 4
-  chasingSpeed: 8
+  scoutingSpeed: 2
+  chasingSpeed: 4
   satisfactionDuration: 10
   detectionRange: 10
   losePlayerRange: 15
   conversationRange: 4
   dialogueText: {fileID: 950874100}
-  typeSpeed: 0.15
-  displayDuration: 1
+  typeSpeed: 0.03
+  displayDuration: 5
 --- !u!195 &478001805
 NavMeshAgent:
   m_ObjectHideFlags: 0

@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -13,6 +14,8 @@ public class PlayerMovement : MonoBehaviour
     Vector3 moveDirection; //Direction player will move in
     Rigidbody rb; //Reference to player rigidbody
     Rigidbody mopedRb; //Reference to moped rigidbody
+
+    public bool lockPlayer = false; //Variable to lock player movement when delivering food to correct house
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -46,18 +49,24 @@ public class PlayerMovement : MonoBehaviour
         //Calculate movement direction based on player's orientation and input
         moveDirection = orientation.forward * verticalInput + orientation.right * horizontalInput;
 
-        //Move player in calculated direction at specified speed
-        // if(!lockPlayer)
+        if(!lockPlayer) {
+            //Move player in calculated direction at specified speed
             rb.MovePosition(transform.position + moveDirection.normalized * walkSpeed * Time.fixedDeltaTime);
     
-        //Rotate moped to face movement direction of player
-        if (moveDirection != Vector3.zero)
-        {
-            Vector3 right = moveDirection.normalized;
-            Vector3 up = Vector3.up;
-            Vector3 forward = Vector3.Cross(right, up);
-            Quaternion targetRotation = Quaternion.LookRotation(forward, up);
-            Moped.transform.rotation = Quaternion.Slerp(Moped.transform.rotation, targetRotation, Time.fixedDeltaTime * 10f);
+            //Rotate moped to face movement direction of player
+            if (moveDirection != Vector3.zero)
+            {
+                Vector3 right = moveDirection.normalized;
+                Vector3 up = Vector3.up;
+                Vector3 forward = Vector3.Cross(right, up);
+                Quaternion targetRotation = Quaternion.LookRotation(forward, up);
+                Moped.transform.rotation = Quaternion.Slerp(Moped.transform.rotation, targetRotation, Time.fixedDeltaTime * 10f);
+            }
         }
+    }
+
+    public void LockPlayerMovement(Boolean setting)
+    {
+        lockPlayer = setting;
     }
 }
