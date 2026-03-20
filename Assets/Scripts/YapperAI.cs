@@ -32,6 +32,12 @@ public class YapperAI : MonoBehaviour
     [Header("NavMeshAgent Variables")]
     private NavMeshAgent yapperAgent;
     private YapperState yapperState;
+
+    [Header("Animator Components")]
+    public Animator yapperAnimator;
+    public bool isScouting;
+    public bool isChasing;
+    public bool isConversing;
     
     [Header("Dialogue")]
     private String[][] dialogueOptions;
@@ -43,6 +49,15 @@ public class YapperAI : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        scoutingSpeed = 3f;
+        chasingSpeed = 8f;
+        satisfactionDuration = 10f;
+        detectionRange = 12f;
+        losePlayerRange = 18f;
+        conversationRange = 4f;
+        typeSpeed = 0.1f;
+        displayDuration = 1f;
+        
         yapperAgent = GetComponent<NavMeshAgent>(); //Obtain NavMeshAgent component from yap
         yapperAgent.speed = scoutingSpeed; //Assign a random speed to each civilian AI
         yapperAgent.angularSpeed = 120f; //Set angular speed for smoother turning
@@ -66,7 +81,7 @@ public class YapperAI : MonoBehaviour
             {
                 "ashdjfklahsdjkflahsjkdlafsdfa" ,
                 "uqiryewuiqroyewiuqyorueiwqoryeuiwqorew" ,
-                "qhguiqohurihqeuriqwphe crazy dave stuff fhuiaosdhfuiaodhfuiaofhsduiaofs have you seen my taco" 
+                "qhguiqohurihqeuriqwphe crazy dave stuff" 
             },
         };
 
@@ -130,11 +145,21 @@ public class YapperAI : MonoBehaviour
         {
             case YapperState.Scouting:
 
+                yapperAnimator.SetBool("isScouting", true);
+                yapperAnimator.SetBool("isChasing", false);
+                yapperAnimator.SetBool("isConversing", false);
+                yapperAnimator.speed = yapperAgent.speed; //Adjust animation speed based on movement speed
+
+
                 yapperState = YapperState.Scouting;
                 yapperAgent.speed = scoutingSpeed;
                 break;
 
             case YapperState.Chasing:
+
+                yapperAnimator.SetBool("isScouting", false);
+                yapperAnimator.SetBool("isChasing", true);
+                yapperAnimator.SetBool("isConversing", false);
 
                 yapperState = YapperState.Chasing;
                 yapperAgent.speed = chasingSpeed;
@@ -142,12 +167,20 @@ public class YapperAI : MonoBehaviour
 
             case YapperState.Conversing:
 
+                yapperAnimator.SetBool("isScouting", false);
+                yapperAnimator.SetBool("isChasing", false);
+                yapperAnimator.SetBool("isConversing", true);
+
                 yapperState = YapperState.Conversing;
                 playerMovement.LockPlayerMovement(true); //Lock player movement while conversing
                 initiateDialogue();
                 break;
 
             case YapperState.Satisfied:
+
+                yapperAnimator.SetBool("isScouting", false);
+                yapperAnimator.SetBool("isChasing", false);
+                yapperAnimator.SetBool("isConversing", false);
 
                 yapperState = YapperState.Satisfied;
                 yapperAgent.speed = scoutingSpeed;

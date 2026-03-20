@@ -11528,7 +11528,7 @@ PrefabInstance:
     - target: {fileID: 5866666021909216657, guid: 7d186a4e5e9b662418119ffdcb15c6a3, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 9100000, guid: 3b26479cae21541e2976acc8be564d90, type: 2}
     - target: {fileID: 5866666021909216657, guid: 7d186a4e5e9b662418119ffdcb15c6a3, type: 3}
       propertyPath: m_WarningMessage
       value: 
@@ -11600,6 +11600,10 @@ MonoBehaviour:
   detectionRange: 10
   losePlayerRange: 15
   conversationRange: 4
+  yapperAnimator: {fileID: 478001806}
+  isScouting: 0
+  isChasing: 0
+  isConversing: 0
   dialogueText: {fileID: 950874100}
   typeSpeed: 0.15
   displayDuration: 1
@@ -11625,6 +11629,11 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!95 &478001806 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: 7d186a4e5e9b662418119ffdcb15c6a3, type: 3}
+  m_PrefabInstance: {fileID: 478001798}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &485036809
 GameObject:
   m_ObjectHideFlags: 0
