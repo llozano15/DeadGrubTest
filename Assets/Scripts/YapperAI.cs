@@ -59,7 +59,7 @@ public class YapperAI : MonoBehaviour
         displayDuration = 1f;
         
         yapperAgent = GetComponent<NavMeshAgent>(); //Obtain NavMeshAgent component from yap
-        yapperAgent.speed = scoutingSpeed; //Assign a random speed to each civilian AI
+        yapperAgent.speed = scoutingSpeed;
         yapperAgent.angularSpeed = 120f; //Set angular speed for smoother turning
         yapperState = YapperState.Scouting; //Set scouting as initial state
 
@@ -148,11 +148,10 @@ public class YapperAI : MonoBehaviour
                 yapperAnimator.SetBool("isScouting", true);
                 yapperAnimator.SetBool("isChasing", false);
                 yapperAnimator.SetBool("isConversing", false);
-                yapperAnimator.speed = yapperAgent.speed; //Adjust animation speed based on movement speed
 
-
-                yapperState = YapperState.Scouting;
                 yapperAgent.speed = scoutingSpeed;
+                yapperAnimator.speed = yapperAgent.speed / 2f; //Adjust animation speed based on movement speed
+                yapperState = YapperState.Scouting;
                 break;
 
             case YapperState.Chasing:
@@ -161,8 +160,8 @@ public class YapperAI : MonoBehaviour
                 yapperAnimator.SetBool("isChasing", true);
                 yapperAnimator.SetBool("isConversing", false);
 
-                yapperState = YapperState.Chasing;
                 yapperAgent.speed = chasingSpeed;
+                yapperState = YapperState.Chasing;
                 break;
 
             case YapperState.Conversing:
@@ -172,6 +171,7 @@ public class YapperAI : MonoBehaviour
                 yapperAnimator.SetBool("isConversing", true);
 
                 yapperState = YapperState.Conversing;
+                yapperAnimator.speed = 1f;
                 playerMovement.LockPlayerMovement(true); //Lock player movement while conversing
                 initiateDialogue();
                 break;
@@ -184,6 +184,7 @@ public class YapperAI : MonoBehaviour
 
                 yapperState = YapperState.Satisfied;
                 yapperAgent.speed = scoutingSpeed;
+                yapperAnimator.speed = 1f;
                 playerMovement.LockPlayerMovement(false); //Unlock player movement when satisfied
                 break;
         }
