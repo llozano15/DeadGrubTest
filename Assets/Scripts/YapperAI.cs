@@ -66,22 +66,26 @@ public class YapperAI : MonoBehaviour
         dialogueOptions = new String[][]
         {
             new String[] // Dialogue set 1
-            { 
-                "1111111111111111111111" ,
-                "2222222222222222222222" ,
-                "3333333333333333333333"
+            {
+                "Sup…  just wanted to discuss your car’s extended warranty." ,
+                "Oh, wait, you don’t have a car?" ,
+                "You only have that moped?" ,
+                "..." ,
+                "Well, do you wanna discuss your moped’s extended warranty?"
             },
             new String[] // Dialogue set 2
             {
-                "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" ,
-                "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB" ,
-                "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC" 
+                "Hey!! Hi!! I just really wanted to talk to you!!! Cause like… wow! You're still a human?" ,
+                "O-M-G! Like– How???" ,
+                "Do you just smell that badly that no one wants to eat you?" ,
+                "KIDDING!!!! ish. :P"
             },
             new String[] // Dialogue set 3
             {
-                "ashdjfklahsdjkflahsjkdlafsdfa" ,
-                "uqiryewuiqroyewiuqyorueiwqoryeuiwqorew" ,
-                "qhguiqohurihqeuriqwphe crazy dave stuff" 
+                "Hey." ,
+                "Oh wow. You’re not a zombie yet." ,
+                "Damn… I remember when I was still human." ,
+                "Thank God I'm not anymore. My workplace was going to shit, so there was a chance of me getting laid off."
             },
         };
 
